@@ -1,0 +1,248 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <style>
+      .carousel-inner img {
+        height: 80%; /* Mengurangi tinggi gambar menjadi 75% dari tinggi aslinya */
+      }
+
+      @media (max-width: 1000px) {
+    .img-fluid {
+      display: none;
+    }
+  }
+    </style>
+
+
+    <title>Caffe-shop</title>
+  </head>
+  <body>
+
+     <nav class="navbar navbar-expand-lg navbar-light bg-light">
+       <div class="container">
+         <a class="navbar-brand" href="#">Cafe</a>
+         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+           <span class="navbar-toggler-icon"></span>
+         </button>
+         <div class="collapse navbar-collapse" id="navbarNav">
+           <ul class="navbar-nav ms-auto">
+             <li class="nav-item">
+               <a class="nav-link active" aria-current="page" href="#home">Home</a>
+             </li>
+             <li class="nav-item">
+               <a class="nav-link" href="#feature">Features</a>
+             </li>
+             <li class="nav-item">
+               <a class="nav-link" href="#menu">Menu</a>
+             </li>
+             <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+           </ul>
+         </div>
+       </div>
+     </nav>
+
+     <div class="hero-section" style="background-image: url('https://images.unsplash.com/photo-1541544537156-7627a7a4aa1c?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fGNhZmUlMjBmb29kfGVufDB8fDB8fHww'); height: 500px; background-size: cover; background-position: center;">
+       <div class="container h-100">
+         <div class="row h-100 align-items-center">
+           <div class="col-12 text-center">
+             <h1 class="text-white">Selamat Datang di cafe-shop</h1>
+             <p class="text-light">Cuman di cafe-shop doang nyedian makanan dan viral tapi seharga dompet pelajar</p>
+           </div>
+         </div>
+       </div>
+     </div>
+    
+    <section class="services-section py-5" id="feature">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 text-center mb-4">
+            <h2>Layanan Kami</h2>
+            <p class="text-muted">Berikut adalah beberapa layanan yang kami tawarkan</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4">
+            <div class="card">
+              <img src="https://media.istockphoto.com/id/979180054/photo/customer-self-service-order-drink-menu-with-tablet-screen-at-cafe-counter-bar-seller-coffee.webp?b=1&s=170667a&w=0&k=20&c=ruOKsI3YTThF4lejJTIrG3wk2nawRLtOA6FPMzu56b8=" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Pembayarn sangat mudah</h5>
+                <p class="card-text">bisa berupa uang tunai,bank-digital dll</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card">
+              <img src="https://media.istockphoto.com/id/1158191245/photo/chef-serving-food.webp?b=1&s=170667a&w=0&k=20&c=jpmagmYZ8a4yTHQOKNy3APxgH4bV-Y-qy4inPQBPjf4=" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Chef yg berpengelaman</h5>
+                <p class="card-text">penyajian makanan yang lezat, inovatif, dan berkualitas tinggi, menciptakan pengalaman kuliner yang tak terlupakan bagi para pelanggannya.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card">
+              <img src="https://media.istockphoto.com/id/1142184572/photo/enjoying-together-at-their-favorite-place.webp?b=1&s=170667a&w=0&k=20&c=zNCsH-CqKluDHudA-g9pdHHBfXyCAjVBE1r2VnUfZsU=" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Ruang Meeting luas Dan Nyaman</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="menu-slide py-5 bg-light" id="menu">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 text-center mb-4">
+            <h2>Galeri Menu</h2>
+            <p class="text-muted">Jelajahi berbagai pilihan menu kami melalui galeri berikut</p>
+          </div>
+        </div>
+        <div id="menuCarousel" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="https://source.unsplash.com/1600x900/?food" class="d-block w-100" alt="Menu 1">
+            </div>
+            <div class="carousel-item">
+              <img src="https://source.unsplash.com/1600x900/?drink" class="d-block w-100" alt="Menu 2">
+            </div>
+            <div class="carousel-item">
+              <img src="https://source.unsplash.com/1600x900/?vegetable" class="d-block w-100" alt="Menu 3">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#menuCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Sebelumnya</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#menuCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Selanjutnya</span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact-section py-5 bg-white" id="contact">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-6">
+            <img src="https://images.unsplash.com/photo-1620194544222-8c956ca15f1d?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fGxvZ28lMjBjYWZlJTIwZm9vZHxlbnwwfHwwfHx8MA%3D%3D" class="img-fluid" alt="Contact Image">
+          </div>
+          <div class="col-lg-6">
+            <h2 class="text-center">Kontak Kami</h2>
+            <form>
+              <div class="mb-3">
+                <label for="name" class="form-label">Nama</label>
+                <input type="text" class="form-control" id="name" placeholder="Masukkan nama Anda">
+              </div>
+              <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control" id="email" placeholder="Masukkan email Anda">
+              </div>
+              <div class="mb-3">
+                <label for="message" class="form-label">Pesan</label>
+                <textarea class="form-control" id="message" rows="3" placeholder="Tulis pesan Anda"></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary">Kirim Pesan</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="text-center text-lg-start bg-light text-muted">
+      <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+        <div class="me-5 d-none d-lg-block">
+          <span>Hubungi kami melalui media sosial kami:</span>
+        </div>
+        <div>
+          <a href="" class="me-4 text-reset">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <a href="" class="me-4 text-reset">
+            <i class="fab fa-twitter"></i>
+          </a>
+          <a href="" class="me-4 text-reset">
+            <i class="fab fa-google"></i>
+          </a>
+          <a href="" class="me-4 text-reset">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a href="" class="me-4 text-reset">
+            <i class="fab fa-linkedin"></i>
+          </a>
+          <a href="" class="me-4 text-reset">
+            <i class="fab fa-github"></i>
+          </a>
+        </div>
+      </section>
+      <section class="">
+        <div class="container text-center text-md-start mt-5">
+          <div class="row mt-3">
+            <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+              <h6 class="text-uppercase fw-bold mb-4">
+                <i class="fas fa-gem me-3">Cafe Shop</i>
+              </h6>
+            </div>
+            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+              <h6 class="text-uppercase fw-bold mb-4">
+                Produk
+              </h6>
+              <p>
+                <a href="#!" class="text-reset">Makanan</a>
+              </p>
+              <p>
+                <a href="#!" class="text-reset">Minuman</a>
+              </p>
+              <p>
+                <a href="#!" class="text-reset">Paket Spesial</a>
+              </p>
+              <p>
+                <a href="#!" class="text-reset">Promosi</a>
+              </p>
+            </div>
+            <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+              <h6 class="text-uppercase fw-bold mb-4">
+                Kontak
+              </h6>
+              <p><i class="fas fa-home me-3">jl.sukarno 19,bandung</i></p>
+              <p>
+                <i class="fas fa-envelope me-3">cafe@gmail.com</i>
+              </p>
+              <p><i class="fas fa-phone me-3"></i> + 01 234 567 88</p>
+              <p><i class="fas fa-print me-3"></i> + 01 234 567 89</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+        © 2024 Hak Cipta:
+        <a class="text-reset fw-bold" href="#">cafe-shop.com</a>
+      </div>
+    </footer>
+
+   
+     
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>
